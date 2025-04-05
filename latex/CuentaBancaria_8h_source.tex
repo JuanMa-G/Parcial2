@@ -1,0 +1,34 @@
+\doxysection{Cuenta\+Bancaria.\+h}
+\hypertarget{CuentaBancaria_8h_source}{}\label{CuentaBancaria_8h_source}\index{include/CuentaBancaria.h@{include/CuentaBancaria.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ CUENTABANCARIA\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ CUENTABANCARIA\_H}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classCuentaBancaria}{CuentaBancaria}}\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00016\ \ \ \ \ std::string\ numeroCuenta;}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{float}\ saldo;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{bool}\ bloqRetiros\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{comment}{//\ Constructor}}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{classCuentaBancaria_ad4a52b7a365bdb6480820b93b9fd294f}{CuentaBancaria}}(std::string\ numCuenta,\ \textcolor{keywordtype}{float}\ saldoInicial)\ :\ numeroCuenta(numCuenta),\ saldo(saldoInicial)\ \{\}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{comment}{//\ Getters\ \&\ Setters}}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCuentaBancaria_aab53e6acb150016fdd9a434b72d6f5b2}{depositar}}(\textcolor{keywordtype}{float}\ cantidad);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCuentaBancaria_ab6903b334a6ea85e2e3f685f0f67d664}{retirar}}(\textcolor{keywordtype}{float}\ cantidad);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCuentaBancaria_a7458a955499a0e129e7b84e26ea5a518}{bloquearRetiros}}(\textcolor{keywordtype}{bool}\ bloquear);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classCuentaBancaria_a8b9ce12075c6695214d19426c06a9fa1}{obtenerSaldo}}();}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

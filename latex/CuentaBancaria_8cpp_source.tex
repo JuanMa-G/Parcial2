@@ -1,0 +1,46 @@
+\doxysection{Cuenta\+Bancaria.\+cpp}
+\hypertarget{CuentaBancaria_8cpp_source}{}\label{CuentaBancaria_8cpp_source}\index{src/CuentaBancaria.cpp@{src/CuentaBancaria.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ "{}../include/CuentaBancaria.h"{}}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00004\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCuentaBancaria_aab53e6acb150016fdd9a434b72d6f5b2}{CuentaBancaria::depositar}}(\textcolor{keywordtype}{float}\ cantidad)\ \{}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{keywordflow}{if}\ (cantidad\ >\ 0)\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ saldo\ +=\ cantidad;}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Deposito\ exitoso.\ Nuevo\ saldo:\ "{}}\ <<\ saldo\ <<\ std::endl;}
+\DoxyCodeLine{00010\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Cantidad\ a\ depositar\ debe\ ser\ positiva."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00012\ \ \ \ \ \}}
+\DoxyCodeLine{00013\ \}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCuentaBancaria_ab6903b334a6ea85e2e3f685f0f67d664}{CuentaBancaria::retirar}}(\textcolor{keywordtype}{float}\ cantidad)\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordflow}{if}\ (bloqRetiros\ ==\ \textcolor{keyword}{true})\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Retiros\ bloqueados\ temporalmente."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00019\ \ \ \ \ \}}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordflow}{if}\ ((cantidad\ <=\ saldo)\ \&\&\ (cantidad\ >\ 0))\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ saldo\ -\/=\ cantidad;}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Retiro\ exitoso.\ Nuevo\ saldo:\ "{}}\ <<\ saldo\ <<\ std::endl;}
+\DoxyCodeLine{00023\ \ \ \ \ \}\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Cantidad\ a\ retirar\ no\ válida."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00026\ \ \ \ \ \}}
+\DoxyCodeLine{00027\ \}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCuentaBancaria_a7458a955499a0e129e7b84e26ea5a518}{CuentaBancaria::bloquearRetiros}}(\textcolor{keywordtype}{bool}\ bloquear)\ \{}
+\DoxyCodeLine{00030\ \ \ \ \ bloqRetiros\ =\ bloquear;}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordflow}{if}\ (bloqRetiros)}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Los\ retiros\ han\ sido\ bloqueados."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Los\ retiros\ han\ sido\ desbloqueados."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00035\ \}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classCuentaBancaria_a8b9ce12075c6695214d19426c06a9fa1}{CuentaBancaria::obtenerSaldo}}()\{}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordflow}{return}\ saldo;}
+\DoxyCodeLine{00040\ \}}
+
+\end{DoxyCode}

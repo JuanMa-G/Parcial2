@@ -1,0 +1,4 @@
+Reporte de saldos de usuarios:
+Cuenta 789: $8500
+Cuenta 456: $5750
+Cuenta 123: $9500

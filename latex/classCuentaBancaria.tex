@@ -1,0 +1,122 @@
+\doxysection{Cuenta\+Bancaria Class Reference}
+\hypertarget{classCuentaBancaria}{}\label{classCuentaBancaria}\index{CuentaBancaria@{CuentaBancaria}}
+
+
+Clase de cuenta bancaria.  
+
+
+
+
+{\ttfamily \#include $<$Cuenta\+Bancaria.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCuentaBancaria_ad4a52b7a365bdb6480820b93b9fd294f}{Cuenta\+Bancaria}} (std\+::string num\+Cuenta, float saldo\+Inicial)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase \doxylink{classCuentaBancaria}{Cuenta\+Bancaria}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCuentaBancaria_aab53e6acb150016fdd9a434b72d6f5b2}{depositar}} (float cantidad)
+\begin{DoxyCompactList}\small\item\em Deposita una cantidad en la cuenta. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCuentaBancaria_ab6903b334a6ea85e2e3f685f0f67d664}{retirar}} (float cantidad)
+\begin{DoxyCompactList}\small\item\em Retira una cantidad en la cuenta. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCuentaBancaria_a7458a955499a0e129e7b84e26ea5a518}{bloquear\+Retiros}} (bool bloquear)
+\begin{DoxyCompactList}\small\item\em Bloquea o desbloquea los retiros de la cuenta. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classCuentaBancaria_a8b9ce12075c6695214d19426c06a9fa1}{obtener\+Saldo}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el saldo actual de la cuenta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase de cuenta bancaria. 
+
+\begin{DoxyAuthor}{Author}
+Juan Manuel Gómez y Jeimmy Andrea Gonzalez 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2025-\/04-\/04
+\end{DoxyDate}
+La clase {\ttfamily \doxylink{classCuentaBancaria}{Cuenta\+Bancaria}} representa una cuenta bancaria simple que permite realizar operaciones de depósito, retiro y bloqueo de retiros. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classCuentaBancaria_ad4a52b7a365bdb6480820b93b9fd294f}\label{classCuentaBancaria_ad4a52b7a365bdb6480820b93b9fd294f} 
+\index{CuentaBancaria@{CuentaBancaria}!CuentaBancaria@{CuentaBancaria}}
+\index{CuentaBancaria@{CuentaBancaria}!CuentaBancaria@{CuentaBancaria}}
+\doxysubsubsection{\texorpdfstring{CuentaBancaria()}{CuentaBancaria()}}
+{\footnotesize\ttfamily Cuenta\+Bancaria\+::\+Cuenta\+Bancaria (\begin{DoxyParamCaption}\item[{std\+::string}]{num\+Cuenta,  }\item[{float}]{saldo\+Inicial }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor de la clase \doxylink{classCuentaBancaria}{Cuenta\+Bancaria}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Cuenta} & Número de cuenta. \\
+\hline
+{\em saldo\+Inicial} & Saldo inicial de la cuenta. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classCuentaBancaria_a7458a955499a0e129e7b84e26ea5a518}\label{classCuentaBancaria_a7458a955499a0e129e7b84e26ea5a518} 
+\index{CuentaBancaria@{CuentaBancaria}!bloquearRetiros@{bloquearRetiros}}
+\index{bloquearRetiros@{bloquearRetiros}!CuentaBancaria@{CuentaBancaria}}
+\doxysubsubsection{\texorpdfstring{bloquearRetiros()}{bloquearRetiros()}}
+{\footnotesize\ttfamily void Cuenta\+Bancaria\+::bloquear\+Retiros (\begin{DoxyParamCaption}\item[{bool}]{bloquear }\end{DoxyParamCaption})}
+
+
+
+Bloquea o desbloquea los retiros de la cuenta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bloquear} & true para bloquear los retiros, false para desbloquear los retiros. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classCuentaBancaria_aab53e6acb150016fdd9a434b72d6f5b2}\label{classCuentaBancaria_aab53e6acb150016fdd9a434b72d6f5b2} 
+\index{CuentaBancaria@{CuentaBancaria}!depositar@{depositar}}
+\index{depositar@{depositar}!CuentaBancaria@{CuentaBancaria}}
+\doxysubsubsection{\texorpdfstring{depositar()}{depositar()}}
+{\footnotesize\ttfamily void Cuenta\+Bancaria\+::depositar (\begin{DoxyParamCaption}\item[{float}]{cantidad }\end{DoxyParamCaption})}
+
+
+
+Deposita una cantidad en la cuenta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cantidad} & Cantidad a depositar. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classCuentaBancaria_a8b9ce12075c6695214d19426c06a9fa1}\label{classCuentaBancaria_a8b9ce12075c6695214d19426c06a9fa1} 
+\index{CuentaBancaria@{CuentaBancaria}!obtenerSaldo@{obtenerSaldo}}
+\index{obtenerSaldo@{obtenerSaldo}!CuentaBancaria@{CuentaBancaria}}
+\doxysubsubsection{\texorpdfstring{obtenerSaldo()}{obtenerSaldo()}}
+{\footnotesize\ttfamily float Cuenta\+Bancaria\+::obtener\+Saldo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obtiene el saldo actual de la cuenta. 
+
+\begin{DoxyReturn}{Returns}
+Saldo actual de la cuenta. 
+\end{DoxyReturn}
+\Hypertarget{classCuentaBancaria_ab6903b334a6ea85e2e3f685f0f67d664}\label{classCuentaBancaria_ab6903b334a6ea85e2e3f685f0f67d664} 
+\index{CuentaBancaria@{CuentaBancaria}!retirar@{retirar}}
+\index{retirar@{retirar}!CuentaBancaria@{CuentaBancaria}}
+\doxysubsubsection{\texorpdfstring{retirar()}{retirar()}}
+{\footnotesize\ttfamily void Cuenta\+Bancaria\+::retirar (\begin{DoxyParamCaption}\item[{float}]{cantidad }\end{DoxyParamCaption})}
+
+
+
+Retira una cantidad en la cuenta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cantidad} & Cantidad a retirar. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Cuenta\+Bancaria.\+h\item 
+src/Cuenta\+Bancaria.\+cpp\end{DoxyCompactItemize}
